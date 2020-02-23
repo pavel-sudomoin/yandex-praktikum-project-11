@@ -1,0 +1,25 @@
+{
+  "name": "yandex-praktikum-project-11",
+  "version": "0.1.0",
+  "description": "project 11 for Yandex.Praktikum",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf dist && webpack --mode production",
+    "dev": "webpack-dev-server --mode development --open --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pavel-sudomoin/yandex-praktikum-project-11.git"
+  },
+  "author": "Sudomoin Pavel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pavel-sudomoin/yandex-praktikum-project-11/issues"
+  },
+  "homepage": "https://github.com/pavel-sudomoin/yandex-praktikum-project-11#readme",
+  "devDependencies": {
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
