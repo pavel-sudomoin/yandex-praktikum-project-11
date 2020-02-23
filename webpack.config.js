@@ -1,11 +1,14 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const WebpackMd5Hash = require('webpack-md5-hash');
+
 const path = require('path');
 
 module.exports = {
     entry: { main: './src/js/script.js' },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'main.js'
+        filename: '[name].[chunkhash].js'
     },
     module: {
         rules: [
@@ -36,7 +39,13 @@ module.exports = {
     },
     plugins: [
         new MiniCssExtractPlugin({
-            filename: 'index.css'
-        })
+            filename: 'style.[contenthash].css',
+        }),
+        new HtmlWebpackPlugin({
+            inject: false,
+            template: './src/index.html',
+            filename: 'index.html'
+        }),
+        new WebpackMd5Hash()
     ]
 }
