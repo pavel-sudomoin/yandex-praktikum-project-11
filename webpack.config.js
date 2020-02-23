@@ -24,7 +24,7 @@ module.exports = {
             {
                 test: /\.(png|jpg|gif|ico|svg)$/,
                 use: [
-                        'file-loader?name=images/[name].[ext]',
+                        'file-loader?name=./images/[name].[ext]',
                         {
                             loader: 'image-webpack-loader',
                             options: {}
@@ -33,7 +33,7 @@ module.exports = {
             },
             {
                 test: /\.(ttf|woff|woff2|eot)$/,
-                use: ['file-loader?name=fonts/[name].[ext]']
+                use: ['file-loader?name=./vendor/[name].[ext]']
             }
         ]
     },
