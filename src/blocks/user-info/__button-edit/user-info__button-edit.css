@@ -1,0 +1,17 @@
+.user-info__button-edit {
+    width: 38px;
+    height: 18px;
+    margin-top: 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  @media screen and (max-width: 980px) {
+    .user-info__button-edit {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }

@@ -1,0 +1,5 @@
+.popup__full-size-card-image {
+  display: block;
+  max-width: 80vw;
+  max-height: 80vh;
+}
