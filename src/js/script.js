@@ -1,3 +1,5 @@
+import "../pages/index.css";
+
 import {Api} from './api.js';
 
 import {NewCardPopup, EditProfilePopup, ChangeAvatarPopup, FullSizeCardPopup} from './popup.js';

@@ -1,3 +1,4 @@
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require('path');
 
 module.exports = {
@@ -7,10 +8,21 @@ module.exports = {
         filename: 'main.js'
     },
     module: {
-        rules: [{ // тут описываются правила
-            test: /\.js$/, // регулярное выражение, которое ищет все js файлы
-            use: { loader: "babel-loader" }, // весь JS обрабатывается пакетом babel-loader
-            exclude: /node_modules/ // исключает папку node_modules
-            }]
-        }
+        rules: [
+            {
+                test: /\.js$/,
+                use: { loader: "babel-loader" },
+                exclude: /node_modules/
+            },
+            {
+                test: /\.css$/,
+                use: [MiniCssExtractPlugin.loader, 'css-loader']
+            }
+        ]
+    },
+    plugins: [
+        new MiniCssExtractPlugin({
+            filename: 'index.css'
+        })
+    ]
 }
