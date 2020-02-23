@@ -17,6 +17,16 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: [MiniCssExtractPlugin.loader, 'css-loader']
+            },
+            {
+                test: /\.(png|jpg|gif|ico|svg)$/,
+                use: [
+                        'file-loader?name=images/[name].[ext]',
+                        {
+                            loader: 'image-webpack-loader',
+                            options: {}
+                        }
+                ]
             }
         ]
     },
