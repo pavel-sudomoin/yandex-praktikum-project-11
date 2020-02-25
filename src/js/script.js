@@ -1,5 +1,3 @@
-import "../pages/index.css";
-
 import {Api} from './api.js';
 
 import {NewCardPopup, EditProfilePopup, ChangeAvatarPopup, FullSizeCardPopup} from './popup.js';
@@ -13,10 +11,8 @@ import {UserInfo} from './user-info.js';
 import {FormValidator} from './form-validator.js';
 
 
-const baseUrl = NODE_ENV === 'development' ? 'http://praktikum.tk/cohort7' : 'https://praktikum.tk/cohort7'
-
 const api = new Api({
-  "baseUrl": baseUrl,
+  "baseUrl": "http://95.216.175.5/cohort7",
   "headers": {
     "authorization": "d5066112-0f15-4652-8789-daa06285b3ec",
     "Content-Type": "application/json"
