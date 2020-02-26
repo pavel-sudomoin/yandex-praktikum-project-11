@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mesto</title>
-    <link rel="stylesheet" href="./pages/index.css">
+    <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.chunks.main.css %>">
   </head>
   <body>
     <div class="root">
       <header class="header root__section">
-        <img src="./images/logo.svg" alt="mesto logo" class="logo">
+        <img src="<%=require('./images/logo.svg').default%>" alt="mesto logo" class="logo">
       </header>
       <div class="profile root__section">
         <div class="user-info">
@@ -28,12 +28,6 @@
       <div class="popup">
       </div>
     </div>
-    <script type="module" src="js/api.js"></script>
-    <script type="module" src="js/card.js"></script>
-    <script type="module" src="js/card-list.js"></script>
-    <script type="module" src="js/popup.js"></script>
-    <script type="module" src="js/user-info.js"></script>
-    <script type="module" src="js/form-validator.js"></script>
-    <script type="module" src="js/script.js"></script>
+    <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
   </body>
 </html>
