@@ -1,6 +1,6 @@
 {
   "name": "yandex-praktikum-project-11",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "project 11 for Yandex.Praktikum",
   "scripts": {
     "build": "rimraf dist && cross-env NODE_ENV=production webpack --mode production",
