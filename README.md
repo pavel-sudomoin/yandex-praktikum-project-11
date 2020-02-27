@@ -2,7 +2,7 @@
 
 ## Версия
 
-Актуальная версия проекта: **v1.0.0**
+Актуальная версия проекта: **v2.0.0**
 
 Ссылка на актуальную версию проекта: [https://pavel-sudomoin.github.io/yandex-praktikum-project-11/](https://pavel-sudomoin.github.io/yandex-praktikum-project-11/)
 
