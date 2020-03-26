@@ -73,7 +73,7 @@ export class Api {
       method: 'PUT',
       headers: this.headers,
     }
-    return this.requestServer(`/cards/like/${cardId}`, options);
+    return this.requestServer(`/cards/${cardId}/likes`, options);
   }
 
   deleteLike(cardId) {
@@ -81,7 +81,7 @@ export class Api {
       method: 'DELETE',
       headers: this.headers,
     }
-    return this.requestServer(`/cards/like/${cardId}`, options);
+    return this.requestServer(`/cards/${cardId}/likes`, options);
   }
 
 }
